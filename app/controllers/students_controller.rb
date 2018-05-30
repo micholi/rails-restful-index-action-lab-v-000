@@ -1,5 +1,7 @@
 class StudentsController < ApplicationController
-  get '/students#index' do
+  
+  def index
     @students = Student.all
   end
+  
 end
